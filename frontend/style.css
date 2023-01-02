@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(hsl(100, 50%, 50%), hsl(100, 45%, 30%));
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-container {
+  width: 75%;
+  height: 60px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#message-input {
+  height: 100%;
+  padding: none;
+  caret-color: hsl(100, 45%, 30%);
+}
+
+.message {
+  width: 100%;
+  margin: 0;
+  border: none;
+  color: hsl(100, 45%, 30%);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+
+#message-input:active,
+#message-input:focus {
+  border: none;
+  outline: none;
+}
